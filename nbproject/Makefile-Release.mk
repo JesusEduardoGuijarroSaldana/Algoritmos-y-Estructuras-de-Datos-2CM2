@@ -38,7 +38,10 @@ OBJECTFILES= \
 	${OBJECTDIR}/1Ejercicio1Class.o \
 	${OBJECTDIR}/2Ejercicio2Class.o \
 	${OBJECTDIR}/3Ejercicio3Class.o \
-	${OBJECTDIR}/4Ejercicio4Class.o
+	${OBJECTDIR}/4Ejercicio4Class.o \
+	${OBJECTDIR}/6EjercicioClassTrianguloRec.o \
+	${OBJECTDIR}/7EjercicioClassHipTrianRec.o \
+	${OBJECTDIR}/8EjercicioClassSueldoNeto.o
 
 
 # C Compiler Flags
@@ -84,6 +87,21 @@ ${OBJECTDIR}/4Ejercicio4Class.o: 4Ejercicio4Class.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4Ejercicio4Class.o 4Ejercicio4Class.cpp
+
+${OBJECTDIR}/6EjercicioClassTrianguloRec.o: 6EjercicioClassTrianguloRec.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/6EjercicioClassTrianguloRec.o 6EjercicioClassTrianguloRec.cpp
+
+${OBJECTDIR}/7EjercicioClassHipTrianRec.o: 7EjercicioClassHipTrianRec.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/7EjercicioClassHipTrianRec.o 7EjercicioClassHipTrianRec.cpp
+
+${OBJECTDIR}/8EjercicioClassSueldoNeto.o: 8EjercicioClassSueldoNeto.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/8EjercicioClassSueldoNeto.o 8EjercicioClassSueldoNeto.cpp
 
 # Subprojects
 .build-subprojects:

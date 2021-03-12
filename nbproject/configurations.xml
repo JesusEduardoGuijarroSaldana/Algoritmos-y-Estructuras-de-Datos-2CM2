@@ -16,6 +16,9 @@
       <itemPath>2Ejercicio2Class.cpp</itemPath>
       <itemPath>3Ejercicio3Class.cpp</itemPath>
       <itemPath>4Ejercicio4Class.cpp</itemPath>
+      <itemPath>6EjercicioClassTrianguloRec.cpp</itemPath>
+      <itemPath>7EjercicioClassHipTrianRec.cpp</itemPath>
+      <itemPath>8EjercicioClassSueldoNeto.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -39,7 +42,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="4Ejercicio4Class.cpp" ex="false" tool="1" flavor2="0">
+      <item path="8EjercicioClassSueldoNeto.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -69,6 +72,12 @@
       <item path="3Ejercicio3Class.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="4Ejercicio4Class.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="6EjercicioClassTrianguloRec.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="7EjercicioClassHipTrianRec.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="8EjercicioClassSueldoNeto.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

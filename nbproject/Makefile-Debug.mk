@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/4Ejercicio4Class.o
+	${OBJECTDIR}/8EjercicioClassSueldoNeto.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmos_y_estructuras_de_datos.exe
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmos_y_estructuras_de_datos ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/4Ejercicio4Class.o: 4Ejercicio4Class.cpp 
+${OBJECTDIR}/8EjercicioClassSueldoNeto.o: 8EjercicioClassSueldoNeto.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/4Ejercicio4Class.o 4Ejercicio4Class.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/8EjercicioClassSueldoNeto.o 8EjercicioClassSueldoNeto.cpp
 
 # Subprojects
 .build-subprojects:
