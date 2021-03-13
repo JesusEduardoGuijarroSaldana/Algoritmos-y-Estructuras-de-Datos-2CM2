@@ -11,6 +11,10 @@
 
 using namespace std;
 
+/*Diseñar e implementar un TAD que lea los valores de los catetos de un 
+triángulo rectángulo y calcule el valor de la hipotenusa, el área y el 
+ * perímetro del triángulo*/
+
 class TrianguloRectangulo{
 private: 
     int base;

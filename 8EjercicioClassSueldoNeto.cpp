@@ -10,6 +10,12 @@
 
 using namespace std;
 
+/*El sueldo de un empleado de la empresa “La Bodeguita” es de la suma de su 
+sueldo mensual  más 4% de comisión sobre las ventas mensuales realizadas; 
+ * después al total obtenido hay que descontarle un 16% de IVA. Realizar un T
+ * AD e implementarlo (C++) para que permita sacar el sueldo neto al mes 
+ * sabiendo que debe solicitar las ventas y el sueldo mensual.*/
+
 class SueldoEmpleado{
 private: 
     float SueldoMensual;

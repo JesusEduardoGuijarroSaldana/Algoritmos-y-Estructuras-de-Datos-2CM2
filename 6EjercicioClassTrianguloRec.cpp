@@ -11,6 +11,9 @@
 
 using namespace std;
 
+/*Diseñar e implementar un TAD que calcule el área y perímetro de triángulo 
+rectángulo (base y altura).*/
+
 class TrianguloRectangulo{
 private: 
     int base;
