@@ -35,13 +35,15 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/10Busqueda.o \
 	${OBJECTDIR}/1Ejercicio1Class.o \
 	${OBJECTDIR}/2Ejercicio2Class.o \
 	${OBJECTDIR}/3Ejercicio3Class.o \
 	${OBJECTDIR}/4Ejercicio4Class.o \
 	${OBJECTDIR}/6EjercicioClassTrianguloRec.o \
 	${OBJECTDIR}/7EjercicioClassHipTrianRec.o \
-	${OBJECTDIR}/8EjercicioClassSueldoNeto.o
+	${OBJECTDIR}/8EjercicioClassSueldoNeto.o \
+	${OBJECTDIR}/9DiferentesOrdenamientos.o
 
 
 # C Compiler Flags
@@ -67,6 +69,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmos_y_estructuras_de_datos.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmos_y_estructuras_de_datos ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/10Busqueda.o: 10Busqueda.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/10Busqueda.o 10Busqueda.cpp
 
 ${OBJECTDIR}/1Ejercicio1Class.o: 1Ejercicio1Class.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -102,6 +109,11 @@ ${OBJECTDIR}/8EjercicioClassSueldoNeto.o: 8EjercicioClassSueldoNeto.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/8EjercicioClassSueldoNeto.o 8EjercicioClassSueldoNeto.cpp
+
+${OBJECTDIR}/9DiferentesOrdenamientos.o: 9DiferentesOrdenamientos.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/9DiferentesOrdenamientos.o 9DiferentesOrdenamientos.cpp
 
 # Subprojects
 .build-subprojects:

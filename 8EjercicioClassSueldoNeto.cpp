@@ -35,6 +35,7 @@ SueldoEmpleado::SueldoEmpleado(){
 SueldoEmpleado::~SueldoEmpleado(){
 
 }
+// Definición de método de la clase class SueldoEmpleado
 void SueldoEmpleado::Obtener(){
     cout <<"Ingrese la cantidad de su sueldo mensual del empleado: ";
     cin >> SueldoMensual;
@@ -54,7 +55,7 @@ int main(int argc, char** argv) {
     
     Empleado1.Obtener();
     
-    cout << "Eñ sueldo neto del Empleado es: " << Empleado1.SueldoNeto() << endl;
+    cout << "El sueldo neto del Empleado es: " << Empleado1.SueldoNeto() << endl;
 
     return 0;
 }
