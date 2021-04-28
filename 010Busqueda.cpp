@@ -84,6 +84,7 @@ void Busqueda::secuencial(int dato){
         cout << "Me tomó: "<< vueltas << " vueltas. " << endl;
     }
 }
+//Método de búsqueda binaria
 void Busqueda::binaria(int dato){
     int inicio=0, medio=0, fin=9;
     int vueltas=0;
@@ -107,7 +108,7 @@ void Busqueda::binaria(int dato){
         vueltas++;
     }
     if (flag == 'V'){
-        cout << "El dato: "<<dato<<" se encuentra em la posición ["<<medio<<"] del arreglo." << endl;
+        cout << "El dato: "<<dato<<" se encuentra en la posición ["<<medio<<"] del arreglo." << endl;
         cout << "Me tomó: "<< vueltas << " vueltas. " << endl;
     }
     else{

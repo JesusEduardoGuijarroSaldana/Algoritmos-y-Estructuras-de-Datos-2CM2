@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/10Busqueda.o
+	${OBJECTDIR}/018OperacionesconPilas.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmos_y_estructuras_de_datos.exe
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/algoritmos_y_estructuras_de_datos ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/10Busqueda.o: 10Busqueda.cpp 
+${OBJECTDIR}/018OperacionesconPilas.o: 018OperacionesconPilas.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/10Busqueda.o 10Busqueda.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/018OperacionesconPilas.o 018OperacionesconPilas.cpp
 
 # Subprojects
 .build-subprojects:
