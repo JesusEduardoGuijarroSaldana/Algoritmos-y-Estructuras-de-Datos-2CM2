@@ -54,16 +54,18 @@ CppApuntadoresPilas::~CppApuntadoresPilas(){
 
 void CppApuntadoresPilas::mostrarString(){
     cout << "\n\tFrases normales del string usando apuntadores."<<endl<<endl;
-    for(int i=0; i<max; i++){
-        puntero1 = &frases[i];
+    puntero1=&frases[0];
+    for(int i=0; i<max; i++){ // contador
         cout << *puntero1 << endl;
+        puntero1++; // movimiento de pos
     }
 }
 void CppApuntadoresPilas::mostrarStringEfectoPila(){
     cout << "\n\tFrases con efecto pila usando apuntadores." << endl << endl;
-    for(int i=max; i>-1; i--){
-        puntero2 = &frases[i];
+    puntero2=&frases[max-1];
+    for(int i=max-1; i>-1; i--){ // contador 
         cout << *puntero2 << endl;
+        puntero2--; // movimiento de pos
     }
 }
 
